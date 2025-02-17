@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Learning Hub: Quizzes & Puzzles</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('./assets/KIDS.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 30px;
+            border-radius: 10px;
+            width: 600px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #f0db4f;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .list {
+            display: none;
+            margin-top: 30px;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .item {
+            background-color: #61dafb;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-decoration: none;
+            display: block;
+        }
+    </style>
+    <script>
+        function toggleList(type) {
+            const quizList = document.getElementById('quiz-list');
+            const puzzleList = document.getElementById('puzzle-list');
+
+            if (type === 'quiz') {
+                quizList.style.display = quizList.style.display === 'none' ? 'block' : 'none';
+                puzzleList.style.display = 'none'; // Hide puzzle list
+            } else {
+                puzzleList.style.display = puzzleList.style.display === 'none' ? 'block' : 'none';
+                quizList.style.display = 'none'; // Hide quiz list
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Climate Change Learning Hub</h1>
+        <p>Welcome! Select a category to explore quizzes or puzzles.</p>
+
+        <!-- Quiz Section -->
+        <div class="section">
+            <button onclick="toggleList('quiz')">Open Quizzes</button>
+            <div class="list" id="quiz-list">
+                <a href="./quiz1/quiz1.html" class="item">Quiz 1: General Climate Knowledge</a>
+                <a href="./quiz2/quiz2.html" class="item">Quiz 2: General Climate Knowledge</a>
+                <a href="./quiz3/quiz3.html" class="item">Quiz 3: General Climate Knowledge</a>
+                <a href="./quiz4/quiz4.html" class="item">Quiz 4: General Climate Knowledge</a>
+                <a href="./quiz5/quiz5.html" class="item">Quiz 5: General Climate Knowledge</a>
+            </div>
+        </div>
+
+        <!-- Puzzle Section -->
+        <div class="section">
+            <button onclick="toggleList('puzzle')">Play Puzzles</button>
+            <div class="list" id="puzzle-list">
+                <a href="./hidden words_1/simple.html" class="item">Puzzle Level 1: Beginner</a>
+                <a href="./hidden words _2/index.html" class="item">Puzzle Level 2: Intermediate</a>
+                <a href="./hidden words 3/harder.html" class="item">Puzzle Level 3: Advanced</a>
+<!--                <a href="puzzle4.html" class="item">Puzzle Level 4: Expert</a>
+                <a href="puzzle5.html" class="item">Puzzle Level 5: Master</a>>-->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

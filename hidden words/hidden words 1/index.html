@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Words Game - Climate and Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hidden Words Game: Climate and Space</h1>
+        <div id="grid-container"></div>
+        <div id="word-list">
+            <h3>Find these words:</h3>
+            <ul id="words-to-find">
+                <!-- Words will be dynamically added here -->
+            </ul>
+        </div>
+        <div id="controls">
+            <button class="btn" id="submit-btn" onclick="submitGame()">Submit</button>
+            <button class="btn" id="reset-btn" onclick="resetGame()">Reset</button>
+        </div>
+        <div id="result-container">
+            <p id="result-message"></p>
+            <div id="stars-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

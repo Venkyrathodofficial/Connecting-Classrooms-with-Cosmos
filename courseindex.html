@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Index</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header */
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url('./WhatsApp\ Image\ 2024-10-04\ at\ 16.31.38_eb1f6ccb.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    /* Categories Section */
+    .categories {
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem;
+    }
+
+    .category {
+      background-color: #f4f4f4;
+      padding: 1rem;
+      text-align: center;
+      width: 20%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .category h3 {
+      margin: 0.5rem 0;
+    }
+
+    /* Featured Courses */
+    .featured-courses {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .courses {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .course {
+      background-color: #fff;
+      width: 30%;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .course img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .course h4 {
+      margin-top: 0.75rem;
+    }
+
+    .linkd{
+        text-decoration: none;
+        color : black;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>Astro Nexus</h1>
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./weather-main/index.html">Live Weather</a>
+    <a href="">Resources</a>
+    <a href="./quizindex.html">Amusements</a>
+    <a href="./zig.html">About</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Explore Our Courses</h1>
+  <p>Find the perfect course to elevate your skills and knowledge!</p>
+  <a href="#link"><button>Get Started</button></a>
+</section>
+
+<!-- Categories Section -->
+<section class="categories">
+  <div class="category">
+    <h3>Climate</h3>
+    <p>"Protect Our Planet – Together, We Can Make a Difference in the Fight Against Climate Change!"</p>
+  </div>
+  <div class="category">
+    <h3>Global Warming</h3>
+    <p>"Act Now to Stop Global Warming – Our Future Depends on It!"</p>
+  </div>
+  <div class="category">
+    <h3>Renewable Energy</h3>
+    <p>"Powering a Sustainable Future – Embrace Renewable Energy for a Cleaner Planet!"</p>
+  </div>
+  <div class="category">
+    <h3>Ocean Currents</h3>
+    <p>"Flowing Forces of Nature – Ocean Currents Shape Our Climate and Ecosystems!"</p>
+  </div>
+</section>
+
+<!-- Featured Courses -->
+<section id ="link" class="featured-courses">
+  <h2>Featured Courses</h2>
+  <div class="courses">
+    <div class="course">
+    <a class ="linkd" href="./resources of climate/doc6.html"><img src="./climate_change.jpg" alt="Course Image">
+      <h4>Climate Change</h4></a>
+
+    </div>
+    <div class="course">
+    <a class ="linkd" href="./resources of climate/doc5.html"><img src="./causes_climate_change.jpg" alt="Course Image">
+      <h4>Causes of climate change</h4>
+        </a>
+    </div>
+    <div class="course">
+    <a class ="linkd" href="./resources of climate/doc1.html"><img src="./space climate.jpg" alt="Course Image">
+      <h4>Space climate</h4></a>
+
+    </div>
+  </div>
+</section>
+<section class="featured-courses">
+    <div class="courses">
+      <div class="course">
+      <a class ="linkd" href="./resources of climate/doc4.html"><img src="./sdg.jpg" alt="Course Image">
+        <h4>Sustainable Development Goals</h4></a>
+      </div>
+      <div class="course">
+      <a class ="linkd" href="./resources of climate/doc2.html"><img src="./renewable.jpg" alt="Course Image">
+        <h4>Renewable Energy</h4></a>
+      </div>
+      <div class="course">
+        <a class ="linkd" href="./resources of climate/doc3.html"><img src="./adaption.jpg" alt="Course Image">
+        <h4>Adaption Stratergies</h4></a>
+      </div>
+    </div>
+  </section>
+  <section class="featured-courses"></section>
+    <div class="courses">
+      <div class="course">
+        <a class ="linkd" href="./resources of climate/doc7.html"><img src="./climate_policy.jpg" alt="Course Image">
+        <h4>Climate Policy</h4></a>
+      </div>
+      <div class="course">
+        <a class ="linkd" href="./resources of climate/doc1.html"><img src="./ocean_current.jpg" alt="Course Image">
+        <h4>Ocean Current and Climate</h4></a>
+      </div>
+
+    </div>
+
+  </section>
+  
+  
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024.</p>
+  <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>

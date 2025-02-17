@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Sustainable Weekly Challenges</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2f855a;
+        }
+        .week {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #e6f7f1;
+            border-left: 5px solid #2f855a;
+            border-radius: 5px;
+        }
+        .week h2 {
+            margin-top: 0;
+            color: #2f855a;
+        }
+        .week p {
+            margin: 0;
+            color: #555;
+        }
+        .points {
+            font-size: 18px;
+            color: #2f855a;
+            font-weight: bold;
+        }
+        .upload-section {
+            margin-top: 15px;
+        }
+        .upload-section label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .upload-section input[type="file"] {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function uploadPhoto(weekNumber) {
+            const fileInput = document.getElementById('upload-' + weekNumber);
+            const pointsSection = document.getElementById('points-' + weekNumber);
+            if (fileInput.files.length > 0) {
+                // Simulate adding 5 points for photo upload
+                pointsSection.innerHTML = "You've earned ⭐⭐⭐⭐⭐ 5 points!";
+            } else {
+                pointsSection.innerHTML = "No photo uploaded.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Weekly Climate Change Sustainable Challenges</h1>
+
+        <div class="week">
+            <h2>Week 1: Plant a Tree</h2>
+            <p>Contribute to reforestation and help combat climate change by planting a tree in your community or garden.</p>
+            <div class="upload-section">
+                <label for="upload-1">Upload your tree planting photo:</label>
+                <input type="file" id="upload-1" accept="image/*">
+                <button onclick="uploadPhoto(1)">Submit Photo</button>
+                <p id="points-1" class="points">No points earned yet.</p>
+            </div>
+        </div>
+
+        <div class="week">
+            <h2>Week 2: Go Meat-Free for a Day</h2>
+            <p>Reduce your carbon footprint by having a meat-free day. Try out plant-based meals!</p>
+            <div class="upload-section">
+                <label for="upload-2">Upload your meal photo:</label>
+                <input type="file" id="upload-2" accept="image/*">
+                <button onclick="uploadPhoto(2)">Submit Photo</button>
+                <p id="points-2" class="points">No points earned yet.</p>
+            </div>
+        </div>
+
+        <div class="week">
+            <h2>Week 3: Save Water</h2>
+            <p>Practice water conservation. Take shorter showers and fix any leaks in your home.</p>
+            <div class="upload-section">
+                <label for="upload-3">Upload your water-saving action photo:</label>
+                <input type="file" id="upload-3" accept="image/*">
+                <button onclick="uploadPhoto(3)">Submit Photo</button>
+                <p id="points-3" class="points">No points earned yet.</p>
+            </div>
+        </div>
+
+        <div class="week">
+            <h2>Week 4: Use Reusable Bags</h2>
+            <p>Commit to using reusable bags for your groceries and shopping to reduce plastic waste.</p>
+            <div class="upload-section">
+                <label for="upload-4">Upload your reusable bag photo:</label>
+                <input type="file" id="upload-4" accept="image/*">
+                <button onclick="uploadPhoto(4)">Submit Photo</button>
+                <p id="points-4" class="points">No points earned yet.</p>
+            </div>
+        </div>
+
+        <div class="week">
+            <h2>Week 5: Bike or Walk Instead of Driving</h2>
+            <p>Reduce air pollution by choosing to walk or bike instead of driving at least once this week.</p>
+            <div class="upload-section">
+                <label for="upload-5">Upload your biking/walking photo:</label>
+                <input type="file" id="upload-5" accept="image/*">
+                <button onclick="uploadPhoto(5)">Submit Photo</button>
+                <p id="points-5" class="points">No points earned yet.</p>
+            </div>
+        </div>
+
+        <div class="week">
+            <h2>Week 6: Recycle</h2>
+            <p>Take the time to sort your waste properly and recycle as much as possible.</p>
+            <div class="upload-section">
+                <label for="upload-6">Upload your recycling action photo:</label>
+                <input type="file" id="upload-6" accept="image/*">
+                <button onclick="uploadPhoto(6)">Submit Photo</button>
+                <p id="points-6" class="points">No points earned yet.</p>
+            </div>
+        </div>
+
+        <div class="week">
+            <h2>Week 7: Support Local Farmers</h2>
+            <p>Buy local produce to reduce transportation emissions and support sustainable farming practices.</p>
+            <div class="upload-section">
+                <label for="upload-7">Upload your local produce photo:</label>
+                <input type="file" id="upload-7" accept="image/*">
+                <button onclick="uploadPhoto(7)">Submit Photo</button>
+                <p id="points-7" class="points">No points earned yet.</p>
+            </div>
+        </div>
+
+        <div class="week">
+            <h2>Week 8: Reduce Energy Usage</h2>
+            <p>Unplug electronics when not in use, switch to energy-efficient light bulbs, and save electricity wherever possible.</p>
+            <div class="upload-section">
+                <label for="upload-8">Upload your energy-saving action photo:</label>
+                <input type="file" id="upload-8" accept="image/*">
+                <button onclick="uploadPhoto(8)">Submit Photo</button>
+                <p id="points-8" class="points">No points earned yet.</p>
+            </div>
+        </div>
+
+        <div class="week">
+            <h2>Week 9: Say No to Single-Use Plastics</h2>
+            <p>Avoid using single-use plastics like straws and bottles. Opt for reusable alternatives.</p>
+            <div class="upload-section">
+                <label for="upload-9">Upload your reusable items photo:</label>
+                <input type="file" id="upload-9" accept="image/*">
+                <button onclick="uploadPhoto(9)">Submit Photo</button>
+                <p id="points-9" class="points">No points earned yet.</p>
+            </div>
+        </div>
+
+        <div class="week">
+            <h2>Week 10: Start a Compost</h2>
+            <p>Reduce waste and enrich your soil by starting a compost bin for food scraps and garden waste.</p>
+            <div class="upload-section">
+                <label for="upload-10">Upload your compost photo:</label>
+                <input type="file" id="upload-10" accept="image/*">
+                <button onclick="uploadPhoto(10)">Submit Photo</button>
+                <p id="points-10" class="points">No points earned yet.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form>
+            <input type="text" id="name" placeholder="Enter city name" autocomplete="off" class="animated-input">
+            <button class="animated-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <section class="result animated-section">
+            <figure class="name fade-in">
+                <figcaption>London</figcaption> 
+                <img src="https://flagsapi.com/GB/shiny/32.png" alt="Country Flag">
+            </figure>
+
+            <figure class="temperature bounce-in">
+                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="Weather Icon">
+                <figcaption>
+                    <span>31</span><sup></sup>
+                </figcaption> 
+            </figure>
+
+            <p class="description fade-in">Overcast clouds</p>
+            <section class="data">
+            <ul class="climate-data fade-in-up">
+                <li>
+                    <span>Clouds</span>
+                    <i class="fa-solid fa-cloud"></i>
+                    <span id="clouds">98</span>
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <i class="fa-solid fa-droplet"></i>
+                    <span id="humidity">98</span>
+                </li>
+                <li>
+                    <span>Pressure</span>
+                    <i class="fa-solid fa-gauge"></i>
+                    <span id="pressure">1011</span>
+                </li>
+                <li>
+                    <span>Wind Speed</span>
+                    <i class="fa-solid fa-wind"></i>
+                    <span id="windSpeed">5.4</span> 
+                </li>
+                <li>
+                    <span>Visibility</span>
+                    <i class="fa-solid fa-eye"></i>
+                    <span id="visibility">10</span> 
+                </li>
+                <li>
+                    <span>UV Index</span>
+                    <i class="fa-solid fa-sun"></i>
+                    <span id="uvIndex">5 (Moderate)</span>
+                </li>
+                <li>
+                    <span>Air Quality</span>
+                    <i class="fa-solid fa-smog"></i>
+                    <span id="airQuality">Good (1)</span>
+                </li>
+            </ul>
+        </section>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

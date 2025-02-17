@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Learning Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('./assets/sapce.jpg');
+            background-size: cover;
+            color: white;
+        }
+        header {
+            text-align: center;
+            padding: 150px;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        .button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .button:hover {
+            background-color: #218838;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .feature {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .feature-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+        }
+        .content-section {
+            display: none;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .content-section.active {
+            display: block;
+        }
+        iframe {
+            width: 100%;
+            height: 315px;
+            margin-bottom: 20px;
+        }
+        .scrolling-board {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #FFD700;
+            padding: 10px;
+            font-size: 1.5em;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            height: 50px; /* Ensure there's enough height for the scrolling text */
+            line-height: 50px; /* Center the text vertically */
+        }
+        .scrolling-text {
+            display: inline-block;
+            animation: scroll 15s linear infinite; /* Adjusted duration for a slower scroll */
+            position: absolute;
+            white-space: nowrap;
+            padding-left: 100%; /* Starts off-screen */
+            top: 50%; /* Positioning from the top */
+            transform: translateY(-50%); /* Center the text vertically */
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./WhatsApp Image 2024-10-02 at 18.58.00_9ce4c787.jpg" alt="Astro" class="nasa-img" style="position:absolute;top:10px;left:20px;width:100px;">
+        <h1>ASTRO NEXUS</h1>
+        <p>Empowering Students to Understand Our Planet</p>
+        <a href = "./quizindex.html"><button class="button" onclick="showSection('quiz')">Play Games</button></a>
+        <a href ="./courseindex.html"><button class="button" onclick="showSection('resources')">Explore Resources</button></a>
+        <button class="button" onclick="showSection('forum')">Join Discussion Forum</button>
+        <a href="./weather-main/index.html"><button class="button" onclick="showSection('realtime')"> Climate Data</button></a>
+    </header>
+
+    <!-- Scrolling Board for Events -->
+    <div class="scrolling-board">
+        <div class="scrolling-text">
+            Upcoming Events: KL NSS | KL NCC | World Environment Day 2024 | Earth Day | Climate Action Week-1
+        </div>
+    </div>
+
+    <main>
+        <section class="feature">
+            <h2>Explore Our Features</h2>
+            <div class="grid">
+                <div class="feature-item">
+                    <h3>Interactive Quizzes</h3>
+                    <p>Test your knowledge on climate change with engaging quizzes.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Video Resources</h3>
+                    <p>Watch informative videos about climate change and its impact.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Discussion Forum</h3>
+                    <p>Engage with peers and share your thoughts on climate-related issues.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Real-time Data</h3>
+                    <p>Access current climate data and learn about its implications.</p>
+                </div>
+            </div>
+
+            <!-- Quiz Section -->
+            <div id="quiz" class="content-section">
+                <h2>Climate Change Quiz</h2>
+                <div class="quiz-container">
+                    <div class="question">
+                        <h3>1. What is the primary cause of climate change?</h3>
+                        <input type="radio" name="q1" value="a"> A) Solar radiation <br>
+                        <input type="radio" name="q1" value="b"> B) Human activities <br>
+                        <input type="radio" name="q1" value="c"> C) Volcanic eruptions <br>
+                    </div>
+                    <div class="question">
+                        <h3>2. Which gas is the most significant contributor to the greenhouse effect?</h3>
+                        <input type="radio" name="q2" value="a"> A) Oxygen <br>
+                        <input type="radio" name="q2" value="b"> B) Carbon dioxide <br>
+                        <input type="radio" name="q2" value="c"> C) Nitrogen <br>
+                    </div>
+                    <div class="question">
+                        <h3>3. What is the process of trapping heat in the Earth's atmosphere called?</h3>
+                        <input type="radio" name="q3" value="a"> A) Heatwave <br>
+                        <input type="radio" name="q3" value="b"> B) Greenhouse effect <br>
+                        <input type="radio" name="q3" value="c"> C) Ozone depletion <br>
+                    </div>
+                    <button class="button" onclick="alert('Thank you for taking the quiz!')">Submit Quiz</button>
+                </div>
+            </div>
+
+            <!-- Resources Section -->
+            <div id="resources" class="content-section">
+                <h2>Resource Material</h2>
+                <p>Explore our curated list of educational resources:</p>
+                <ul>
+                    <li><a href="https://www.climate.gov/teaching-resources" target="_blank">NOAA Climate.gov</a></li>
+                    <li><a href="https://www.nationalgeographic.org/education/hub/climate-change/" target="_blank">National Geographic Education</a></li>
+                    <li><a href="https://www.epa.gov/education" target="_blank">EPA Education Resources</a></li>
+                </ul>
+                <h3>Videos</h3>
+                <iframe src="https://www.youtube.com/embed/EtW2rrLHs08" title="Climate Change Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/b6Vh-g2p1u0" title="Effects of Climate Change" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!-- Discussion Forum Section -->
+            

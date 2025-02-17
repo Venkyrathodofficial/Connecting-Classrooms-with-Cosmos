@@ -1,0 +1,193 @@
+/* Full Page Setup */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #00aaff, #ffffff);
+    animation: backgroundAnimation 10s ease infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(135deg, #00aaff, #ffffff);
+    }
+    50% {
+        background: linear-gradient(135deg, #007BFF, #ffffff);
+    }
+    100% {
+        background: linear-gradient(135deg, #FF5733, #ffffff);
+    }
+}
+
+main {
+    width: 80%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 40px;
+    transition: transform 1s ease-in-out;
+    animation: fadeInMain 1.5s ease-out;
+}
+
+@keyframes fadeInMain {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form Animation */
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+form input {
+    width: 70%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-out, background 1s ease-out;
+}
+
+form input:focus {
+    transform: scale(1.05);
+    background: #cbd9eb;
+}
+
+form button {
+    margin-left: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+    transition: transform 0.3s ease-out, background-color 0.5s ease;
+}
+
+form button:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+}
+
+/* Result Section */
+.result {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    animation: fadeInResult 1.2s ease-out;
+    
+}
+
+@keyframes fadeInResult {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.temperature img {
+    width: 150px;
+    margin-bottom: 15px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+p.description {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+/* Climate Data Section */
+ul.climate-data {
+    list-style:none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul.climate-data li {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 48%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+    transition: background 0.3s ease;
+}
+
+ul.climate-data li:hover {
+    background: #007BFF;
+    color: white;
+}
+
+ul.climate-data li i {
+    margin-right: 8px;
+    color: #007BFF;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    ul.climate-data li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 90%;
+        padding: 20px;
+    }
+
+    form input {
+        width: 65%;
+    }
+}
